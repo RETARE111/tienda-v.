@@ -14,4 +14,17 @@ nav ul {
     list-style: none;
     padding: 0;
 }
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
 
+main {
+    padding: 20px;
+}
+.bienvenida {
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
