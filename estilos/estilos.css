@@ -1,30 +1,204 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-}
-header {
-    background-color: #1bcb2f;
-    color: white;
-    padding: 1rem;
-    text-align: center;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-nav ul li {
-    display: inline-block;
-    margin: 0 10px;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fff1f2, #ffe4e6);
+    color: #333;
 }
 
-main {
-    padding: 20px;
-}
-.bienvenida {
-    background-color: white;
+header {
+    background: linear-gradient(to right, #7f1d1d, #dc2626);
+    color: white;
     padding: 20px;
     text-align: center;
-    margin-bottom: 20px;
+    position: relative;
 }
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+.barra-navegacion ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 10px 0;
+    margin: 0;
+    background-color: #fff;
+}
+
+.barra-navegacion ul li a {
+    text-decoration: none;
+    color: #dc2626;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.barra-navegacion ul li a:hover {
+    color: #7f1d1d;
+}
+
+.productos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 20px;
+}
+
+.producto {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.producto:hover {
+    transform: scale(1.03);
+}
+
+.imagen {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.precio {
+    color: #dc2626;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.video-promocion {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff0f1;
+    padding: 30px;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-box {
+    width: 350px;
+    height: 200px;
+    border-radius: 8px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+
+.info-columna {
+    max-width: 350px;
+}
+
+.info-producto h2 {
+    font-size: 22px;
+    color: #b91c1c;
+    margin-bottom: 10px;
+}
+
+.precio-original {
+    color: #888;
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+.precio-descuento {
+    color: #dc2626;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.descripcion {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.boton-carrito {
+    background-color: #b91c1c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-carrito:hover {
+    background-color: #7f1d1d;
+}
+
+footer.creditos {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fdf2f2;
+    padding: 20px;
+    font-size: 14px;
+    border-top: 1px solid #fca5a5;
+    gap: 40px;
+}
+
+.creditos-izquierda,
+.creditos-derecha {
+    width: 48%;
+}
+
+.ventana-contacto {
+    position: fixed;
+    top: 100px;
+    left: 20px;
+    background: #fff;
+    border-left: 5px solid #dc2626;
+    padding: 15px 20px;
+    width: 230px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    z-index: 1000;
+    font-size: 14px;
+    animation: aparecerVentana 1s ease-out;
+}
+
+.ventana-contacto h3 {
+    margin-top: 0;
+    color: #b91c1c;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.ventana-contacto p {
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+@keyframes aparecerVentana {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom right, #fff1f2, #ffe4e6, #fca5a5);
+    background-attachment: fixed;
+    color: #111;
+}
+

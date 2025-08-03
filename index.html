@@ -2,41 +2,104 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Tienda Digital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPHERE | Tu Tienda Virtual</title>
     <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
     <header>
-        <h1>Mi Tienda Digital</h1>
-        <nav>
+        <h1>SHOPPHERE</h1>
+        <nav class="barra-navegacion">
             <ul>
                 <li><a href="#">Inicio</a></li>
-                <li><a href="#">Productos</a></li>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Categorías</a></li>
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
     </header>
-  <main>
-        <section class="bienvenida">
-            <h2>Bienvenido a nuestra tienda</h2>
-            <p>Explora nuestros productos y compra con confianza.</p>
-        </section>
-  </main>
-   <section class="productos">
-            <h2>Productos Destacados</h2>
-            <div class="producto">
-                <img src="imagenes/5b31f4112136527.600f1aab9c8c3.jpg" alt="Producto 1">
-                <h3>SPLASH</h3>
-                <p>3.00$</p>
-                <button>Agregar al carrito</button>
-            </div>
-            <div class="producto">
-                <img src="https://via.placeholder.com/150" alt="Producto 2">
-                <h3>Producto 2</h3>
-                <p>$20.00</p>
-                <button>Agregar al carrito</button>
-            </div>
-   </section>
 
+    <section class="productos">
+        <div class="producto">
+            <div class="imagen">
+                <img src="imagees/zapatilaaaaa.webp" alt="Zapatillas FlameX">
+            </div>
+            <h3>Zapatillas FlameX</h3>
+            <p class="precio">S/. 149.90</p>
+        </div>
+        <div class="producto">
+            <div class="imagen">
+                <img src="imagees/audifono.webp" alt="Audífonos BeatPro">
+            </div>
+            <h3>Audífonos BeatPro</h3>
+            <p class="precio">S/. 89.00</p>
+        </div>
+        <div class="producto">
+            <div class="imagen">
+                <img src="imagees/reloj.webp" alt="Reloj Smartfit">
+            </div>
+            <h3>Reloj Smartfit</h3>
+            <p class="precio">S/. 119.90</p>
+        </div>
+    </section>
+
+    <section class="video-promocion">
+        <div class="video-columna">
+            <video class="video-box" controls>
+                <source src="videos/promocional.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </div>
+        <div class="info-columna info-producto">
+            <h2>Zapatillas FlameX</h2>
+            <p class="precio-original">Precio: <del>S/. 199.90</del></p>
+            <p class="precio-descuento">Ahora: <strong>S/. 149.90</strong></p>
+            <p class="descripcion">Zapatillas urbanas con suela antideslizante y estilo moderno.</p>
+            <button class="boton-carrito">Añadir al carrito 🛒</button>
+        </div>
+    </section>
+
+    <section class="productos">
+        <div class="producto">
+            <div class="imagen">
+                <img src="imagees/descarga.webp" alt="Mochila Explorer">
+            </div>
+            <h3>Mochila Explorer</h3>
+            <p class="precio">S/. 79.90</p>
+        </div>
+        <div class="producto">
+            <div class="imagen">
+                <img src="imagees/gorro.webp" alt="Gorro UrbanStyle">
+            </div>
+            <h3>Gorro UrbanStyle</h3>
+            <p class="precio">S/. 29.90</p>
+        </div>
+        <div class="producto">
+            <div class="imagen">
+                <img src="imagees/car.webp" alt="Cartera Trendy">
+            </div>
+            <h3>Cartera Trendy</h3>
+            <p class="precio">S/. 99.90</p>
+        </div>
+    </section>
+
+    <footer class="creditos">
+        <div class="creditos-izquierda">
+            <p>Proyecto realizado por Leal y grisante como parte de una tienda virtual ficticia llamada Shopphere.</p>
+            <p>Todos los diseños, imágenes y estructura fueron creados con fines educativos.</p>
+        </div>
+        <div class="creditos-derecha">
+            <p>Curso: Desarrollo Web Frontend - 2025</p>
+            <p>Agradecimientos al profesor por su guía y enseñanza.</p>
+        </div>
+    </footer>
+
+    <div class="ventana-contacto">
+        <h3>¿Necesitas ayuda?</h3>
+        <p><strong>📞 Tel:</strong> +51 987 654 321</p>
+        <p><strong>📧 Correo:</strong> shopphere@tienda.com</p>
+        <p><strong>📍 Dirección:</strong> Lima, Perú</p>
+        <p><strong>🕒 Horario:</strong> Lun - Sáb: 9am - 6pm</p>
+    </div>
 </body>
 </html>
