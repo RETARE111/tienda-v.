@@ -1,105 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHOPPHERE | Tu Tienda Virtual</title>
-    <link rel="stylesheet" href="estilos/estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOPPHERE | Tu Tienda Virtual</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
-    <header>
-        <h1>SHOPPHERE</h1>
-        <nav class="barra-navegacion">
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Ofertas</a></li>
-                <li><a href="#">Categorías</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>SHOPPHERE</h1>
+    <nav class="barra-navegacion">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Ofertas</a></li>
+        <li><a href="#">Categorías</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="productos">
-        <div class="producto">
-            <div class="imagen">
-                <img src="imagees/zapatilaaaaa.webp" alt="Zapatillas FlameX">
-            </div>
-            <h3>Zapatillas FlameX</h3>
-            <p class="precio">S/. 149.90</p>
-        </div>
-        <div class="producto">
-            <div class="imagen">
-                <img src="imagees/audifono.webp" alt="Audífonos BeatPro">
-            </div>
-            <h3>Audífonos BeatPro</h3>
-            <p class="precio">S/. 89.00</p>
-        </div>
-        <div class="producto">
-            <div class="imagen">
-                <img src="imagees/reloj.webp" alt="Reloj Smartfit">
-            </div>
-            <h3>Reloj Smartfit</h3>
-            <p class="precio">S/. 119.90</p>
-        </div>
-    </section>
+  <div class="contenedor">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <h2>Categorías</h2>
+      <ul>
+        <li><a href="#">Zapatillas</a></li>
+        <li><a href="#">Accesorios</a></li>
+        <li><a href="#">Relojes</a></li>
+        <li><a href="#">Tecnología</a></li>
+        <li><a href="#">Mochilas</a></li>
+        <li><a href="#">Moda</a></li>
+      </ul>
 
-    <section class="video-promocion">
+      <div class="carrito">
+        <h2>🛒 Carrito</h2>
+        <p>Tu carrito está vacío</p>
+      </div>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="contenido">
+      <section class="productos">
+        <div class="producto">
+          <div class="imagen">
+            <img src="imagees/zapatilaaaaa.webp" alt="Zapatillas FlameX">
+          </div>
+          <h3>Zapatillas FlameX</h3>
+          <p class="precio">S/. 149.90</p>
+        </div>
+        <div class="producto">
+          <div class="imagen">
+            <img src="imagees/audifono.webp" alt="Audífonos BeatPro">
+          </div>
+          <h3>Audífonos BeatPro</h3>
+          <p class="precio">S/. 89.00</p>
+        </div>
+        <div class="producto">
+          <div class="imagen">
+            <img src="imagees/reloj.webp" alt="Reloj Smartfit">
+          </div>
+          <h3>Reloj Smartfit</h3>
+          <p class="precio">S/. 119.90</p>
+        </div>
+      </section>
+
+      <section class="video-promocion">
         <div class="video-columna">
-            <video class="video-box" controls>
-                <source src="videos/promocional.mp4" type="video/mp4">
-                Tu navegador no soporta el video.
-            </video>
+          <video class="video-box" controls>
+            <source src="videos/promocional.mp4" type="video/mp4">
+          </video>
         </div>
         <div class="info-columna info-producto">
-            <h2>Zapatillas FlameX</h2>
-            <p class="precio-original">Precio: <del>S/. 199.90</del></p>
-            <p class="precio-descuento">Ahora: <strong>S/. 149.90</strong></p>
-            <p class="descripcion">Zapatillas urbanas con suela antideslizante y estilo moderno.</p>
-            <button class="boton-carrito">Añadir al carrito 🛒</button>
+          <h2>Zapatillas FlameX</h2>
+          <p class="precio-original">Precio: <del>S/. 199.90</del></p>
+          <p class="precio-descuento">Ahora: <strong>S/. 149.90</strong></p>
+          <p class="descripcion">Zapatillas urbanas con suela antideslizante y estilo moderno.</p>
+          <button class="boton-carrito">Añadir al carrito 🛒</button>
         </div>
-    </section>
+      </section>
 
-    <section class="productos">
+      <section class="productos">
         <div class="producto">
-            <div class="imagen">
-                <img src="imagees/descarga.webp" alt="Mochila Explorer">
-            </div>
-            <h3>Mochila Explorer</h3>
-            <p class="precio">S/. 79.90</p>
-        </div>
-        <div class="producto">
-            <div class="imagen">
-                <img src="imagees/gorro.webp" alt="Gorro UrbanStyle">
-            </div>
-            <h3>Gorro UrbanStyle</h3>
-            <p class="precio">S/. 29.90</p>
+          <div class="imagen">
+            <img src="imagees/descarga.webp" alt="Mochila Explorer">
+          </div>
+          <h3>Mochila Explorer</h3>
+          <p class="precio">S/. 79.90</p>
         </div>
         <div class="producto">
-            <div class="imagen">
-                <img src="imagees/car.webp" alt="Cartera Trendy">
-            </div>
-            <h3>Cartera Trendy</h3>
-            <p class="precio">S/. 99.90</p>
+          <div class="imagen">
+            <img src="imagees/gorro.webp" alt="Gorro UrbanStyle">
+          </div>
+          <h3>Gorro UrbanStyle</h3>
+          <p class="precio">S/. 29.90</p>
         </div>
-    </section>
+        <div class="producto">
+          <div class="imagen">
+            <img src="imagees/car.webp" alt="Cartera Trendy">
+          </div>
+          <h3>Cartera Trendy</h3>
+          <p class="precio">S/. 99.90</p>
+        </div>
+      </section>
+    </main>
+  </div>
 
-    <footer class="creditos">
-        <div class="creditos-izquierda">
-            <p>Proyecto realizado por Leal y grisante como parte de una tienda virtual ficticia llamada Shopphere.</p>
-            <p>Todos los diseños, imágenes y estructura fueron creados con fines educativos.</p>
-        </div>
-        <div class="creditos-derecha">
-            <p>Curso: Desarrollo Web Frontend - 2025</p>
-            <p>Agradecimientos al profesor por su guía y enseñanza.</p>
-        </div>
-    </footer>
-
-    <div class="ventana-contacto">
-        <h3>¿Necesitas ayuda?</h3>
-        <p><strong>📞 Tel:</strong> +51 987 654 321</p>
-        <p><strong>📧 Correo:</strong> shopphere@tienda.com</p>
-        <p><strong>📍 Dirección:</strong> Lima, Perú</p>
-        <p><strong>🕒 Horario:</strong> Lun - Sáb: 9am - 6pm</p>
+  <!-- Footer -->
+  <footer class="creditos">
+    <div class="columna apps">
+      <h3>Síguenos</h3>
+      <div class="apps-grid">
+        <a href="#"><img src="icons/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="icons/instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="icons/whatsapp.png" alt="Whatsapp"></a>
+        <a href="#"><img src="icons/youtube.png" alt="YouTube"></a>
+        <a href="#"><img src="icons/twitter.png" alt="Twitter"></a>
+        <a href="#"><img src="icons/tiktok.png" alt="TikTok"></a>
+      </div>
     </div>
+
+    <div class="columna">
+      <p>Proyecto realizado por Leal y Grisante como parte de una tienda virtual ficticia llamada Shopphere.</p>
+    </div>
+
+    <div class="columna">
+      <p>Curso: Desarrollo Web Frontend - 2025</p>
+      <p>Agradecimientos al profesor por su guía y enseñanza.</p>
+    </div>
+  </footer>
 </body>
 </html>
