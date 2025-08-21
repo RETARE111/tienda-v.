@@ -266,3 +266,157 @@ footer .apps-grid img:hover {
   border-radius: 8px;
   font-size: 16px;
 }
+/* animacion titulo */
+header h1 {
+  background: linear-gradient(90deg, #fff, #0f0a04, #fff);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradienteTexto 3s linear infinite;
+}
+@keyframes gradienteTexto {
+  0% { background-position: 0%; }
+  100% { background-position: 200%; }
+}
+/* carrito animado */
+.boton-carrito:hover {
+  animation: vibrar 0.3s linear;
+}
+
+@keyframes vibrar {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-3px); }
+  50% { transform: translateX(3px); }
+  75% { transform: translateX(-3px); }
+}
+/* 🛒 Carrito */
+.carrito {
+  background: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.carrito h2 {
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+}
+
+/* 📦 Items dentro del carrito */
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#lista-carrito li {
+  background: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #444;
+  transition: transform 0.2s ease;
+}
+
+#lista-carrito li:hover {
+  transform: scale(1.02);
+  background: #f1f1f1;
+}
+
+/* ❌ Botón eliminar */
+#lista-carrito li .eliminar {
+  background: #f51010;
+  border: none;
+  color: #f30606;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+#lista-carrito li .eliminar:hover {
+  background: #f6f4f4;
+  transform: scale(1.1);
+}
+
+/* 💰 Total */
+#total {
+  font-weight: bold;
+  font-size: 16px;
+  color: #222;
+  padding: 10px;
+  background: #eaf8e6;
+  border-radius: 8px;
+  display: inline-block;
+}
+/* --- Estilos del carrito mejorados --- */
+.carrito {
+  margin-top: 20px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+#lista-carrito {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 12px;
+}
+
+#lista-carrito li {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 10px;
+  align-items: center;
+  background: #f9f9f9;
+  border-radius: 10px;
+  padding: 10px 12px;
+  margin-bottom: 10px;
+}
+
+#lista-carrito .item-precio {
+  font-weight: 700;
+  color: #b91c1c;
+}
+
+#lista-carrito .eliminar {
+  background: #ff4d4d;
+  border: none;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform .15s ease, background .25s ease;
+}
+#lista-carrito .eliminar:hover { background:#e60000; transform: scale(1.05); }
+
+#total {
+  display: inline-block;
+  background: #eaf8e6;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#vaciar-carrito {
+  display: inline-block;
+  background: #f90606;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .25s ease, transform .15s ease;
+}
+#vaciar-carrito:hover { background:#e68900; transform: translateY(-1px); }

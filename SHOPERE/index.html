@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SHOPPHERE | Tu Tienda Virtual</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="estilos/estilos.css">
+  <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
   <header>
@@ -19,12 +19,14 @@
       </ul>
     </nav>
   </header>
+
   <!-- wsp flotante -->
-<a href="https://wa.me/51999999999" target="_blank" class="btn-whatsapp">💬</a>
-<!-- barra de busqueda -->
-<div class="busqueda">
-  <input type="text" placeholder="Buscar productos... 🔍">
-</div>
+  <a href="https://wa.me/51999999999" target="_blank" class="btn-whatsapp">💬</a>
+
+  <!-- barra de busqueda -->
+  <div class="busqueda">
+    <input type="text" placeholder="Buscar productos... 🔍">
+  </div>
 
   <div class="contenedor">
     <!-- Sidebar -->
@@ -41,7 +43,11 @@
 
       <div class="carrito">
         <h2>🛒 Carrito</h2>
-        <p>Tu carrito está vacío</p>
+        <ul id="lista-carrito">
+          <li>Tu carrito está vacío</li>
+        </ul>
+        <p id="total">Total: S/. 0.00</p>
+        <button id="vaciar-carrito">🗑 Vaciar carrito</button>
       </div>
     </aside>
 
@@ -54,6 +60,7 @@
           </div>
           <h3>Zapatillas FlameX</h3>
           <p class="precio">S/. 149.90</p>
+          <button class="boton-carrito">Añadir al carrito 🛒</button>
         </div>
         <div class="producto">
           <div class="imagen">
@@ -61,6 +68,7 @@
           </div>
           <h3>Audífonos BeatPro</h3>
           <p class="precio">S/. 89.00</p>
+          <button class="boton-carrito">Añadir al carrito 🛒</button>
         </div>
         <div class="producto">
           <div class="imagen">
@@ -68,6 +76,7 @@
           </div>
           <h3>Reloj Smartfit</h3>
           <p class="precio">S/. 119.90</p>
+          <button class="boton-carrito">Añadir al carrito 🛒</button>
         </div>
       </section>
 
@@ -94,6 +103,7 @@
           </div>
           <h3>Mochila Explorer</h3>
           <p class="precio">S/. 79.90</p>
+          <button class="boton-carrito">Añadir al carrito 🛒</button>
         </div>
         <div class="producto">
           <div class="imagen">
@@ -101,6 +111,7 @@
           </div>
           <h3>Gorro UrbanStyle</h3>
           <p class="precio">S/. 29.90</p>
+          <button class="boton-carrito">Añadir al carrito 🛒</button>
         </div>
         <div class="producto">
           <div class="imagen">
@@ -108,6 +119,7 @@
           </div>
           <h3>Cartera Trendy</h3>
           <p class="precio">S/. 99.90</p>
+          <button class="boton-carrito">Añadir al carrito 🛒</button>
         </div>
       </section>
     </main>
@@ -153,5 +165,8 @@
       <p>Agradecimientos al profesor por su guía y enseñanza.</p>
     </div>
   </footer>
+
+  <!-- JS al final con defer para asegurar carga -->
+  <script src="js/script.js" defer></script>
 </body>
 </html>
